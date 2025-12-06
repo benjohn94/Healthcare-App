@@ -11,10 +11,6 @@ const Attendance = () => {
   const [success, setSuccess] = useState('');
   const [selectedDate, setSelectedDate] = useState(new Date().toISOString().split('T')[0]);
 
-  useEffect(() => {
-    fetchShifts();
-  }, [selectedDate]);
-
   const fetchShifts = async () => {
     try {
       setLoading(true);
@@ -27,6 +23,11 @@ const Attendance = () => {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    fetchShifts();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedDate]);
 
   const handleShiftSelect = async (shift) => {
     setSelectedShift(shift);

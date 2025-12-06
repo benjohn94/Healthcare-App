@@ -8,10 +8,6 @@ const DailySchedule = () => {
   const [error, setError] = useState('');
   const [selectedWeek, setSelectedWeek] = useState(new Date());
 
-  useEffect(() => {
-    fetchWeeklyShifts();
-  }, [selectedWeek]);
-
   const fetchWeeklyShifts = async () => {
     try {
       setLoading(true);
@@ -43,6 +39,11 @@ const DailySchedule = () => {
     const start = getWeekStart(date);
     return new Date(start.getTime() + 6 * 24 * 60 * 60 * 1000);
   };
+
+  useEffect(() => {
+    fetchWeeklyShifts();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedWeek]);
 
   const getWeekDays = () => {
     const days = [];
