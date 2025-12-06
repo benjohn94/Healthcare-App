@@ -1,0 +1,162 @@
+.daily-schedule {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.week-navigation {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-button,
+.today-button {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.nav-button:hover,
+.today-button:hover {
+  transform: translateY(-2px);
+}
+
+.today-button {
+  background: #4CAF50;
+}
+
+.schedule-container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.schedule-legend {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+.schedule-legend h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.legend-items {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-color {
+  width: 30px;
+  height: 20px;
+  border-radius: 3px;
+}
+
+.schedule-table-container {
+  overflow-x: auto;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+}
+
+.schedule-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.day-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.day-date {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.shift-time-label {
+  background: #f9f9f9;
+  font-weight: 600;
+  color: #333;
+  min-width: 150px;
+}
+
+.shift-cell {
+  min-height: 120px;
+  vertical-align: top;
+  position: relative;
+}
+
+.shift-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.shift-status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.shift-capacity {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.staff-names {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.staff-name {
+  font-size: 0.85rem;
+  color: #555;
+  padding: 0.25rem;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+}
+
+.no-shift {
+  color: #999;
+  font-size: 1.5rem;
+}
