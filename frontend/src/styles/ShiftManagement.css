@@ -1,0 +1,224 @@
+.shift-management {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.shift-form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.shift-form-container h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.shifts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.shift-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.shift-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.shift-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.shift-header h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.shift-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.shift-details {
+  margin-bottom: 1rem;
+}
+
+.shift-details p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.assigned-staff {
+  margin-bottom: 1rem;
+}
+
+.assigned-staff h4 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.assigned-staff ul {
+  list-style: none;
+  padding: 0;
+}
+
+.assigned-staff li {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0.5rem;
+  margin: 0.25rem 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.no-staff {
+  color: #999;
+  font-style: italic;
+}
+
+.unassign-button {
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.unassign-button:hover {
+  background: #cc0000;
+}
+
+.shift-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.assign-button {
+  flex: 1;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.assign-button:hover {
+  opacity: 0.9;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-content h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.staff-list {
+  margin: 1.5rem 0;
+}
+
+.staff-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+.staff-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.staff-info strong {
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.staff-info span {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.assign-staff-button {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.assign-staff-button:hover {
+  opacity: 0.9;
+}
+
+.close-modal-button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #666;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.close-modal-button:hover {
+  background: #555;
+}
